@@ -9,5 +9,5 @@ class Question(models.Model):
         return f"{self.text}"
 
     class Meta:
-        veerbose_name = 'Вопрос'
-        veerbose_name_plural = 'Вопросы'
+        verbose_name = 'Вопрос'
+        verbose_name_plural = 'Вопросы'
