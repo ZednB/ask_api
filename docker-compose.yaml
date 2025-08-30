@@ -2,7 +2,7 @@ version: '3'
 
 services:
   db:
-    image: postgres:15
+    image: postgres:13
     env_file:
       - .env
     environment:
@@ -15,7 +15,7 @@ services:
     build: .
     command: python3 manage.py runserver 0.0.0.0:8000
     ports:
-      - '8000-8000'
+      - '8000:8000'
     depends_on:
       - db
     env_file:
